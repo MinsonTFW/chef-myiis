@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1>Hello, world!</h1>
+        <h1>Hello, world! Again!</h1>
+        <h1>Hello, world! Again! Haha!</h1>
+        <h2>HOSTNAME: <%= node['hostname'] %> </h2>
+        <h2>IPADDRESS: <%= node['ipaddress'] %> </h2>
+        <h2>CPU: <%= node['cpu']['0']['mhz'] %> </h2>
+        <h2>MEMORY: <%= node['memory']['total'] %> </h2>
+        <h2>NAME: <%= @name %> </2>
+        <img src="image.jpg" style="width:140px;height:140px;">
+
+        <% if (50 + 50) == 100 %>
+        <h2>50 + 50 = <%= 50 + 50 %> </h2>
+        <% else %>
+        <h2>At some point all of MATH I learned in school changed. </h2>
+        <% end %>
+    </body>
+</html>
